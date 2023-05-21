@@ -6,33 +6,33 @@ from pygame import mixer
 pygame.init()
 screen=pygame.display.set_mode((1000,800))
 
-backgroundimg=pygame.image.load("kai-pilger-Ef6iL87-vOA-unsplash.jpg")
-backgroundimg2=pygame.image.load("space-galaxy-background.jpg")
+backgroundimg=pygame.image.load("A GAME(update)\kai-pilger-Ef6iL87-vOA-unsplash.jpg")
+backgroundimg2=pygame.image.load("A GAME(update)\space-galaxy-background.jpg")
 
-mixer.music.load('music.mp3')
+mixer.music.load('A GAME(update)\music.mp3')
 # mixer.music.set_volume(0.2)
 mixer.music.play(-1)
 
 pygame.display.set_caption("SPACE MAN")
-icon=pygame.image.load("launch.png")
+icon=pygame.image.load("A GAME(update)\launch.png")
 pygame.display.set_icon(icon)
 
 
-playerimg=pygame.image.load('space-invaders.png')
+playerimg=pygame.image.load('A GAME(update)\space-invaders.png')
 playerx=468
 playery=700
 pcx=0
 pcy=0
 
-enemy1=pygame.image.load('alien (1).png')
-enemy2=pygame.image.load('alien.png')
-enemy3=pygame.image.load('space-ship.png')
+enemy1=pygame.image.load('A GAME(update)\\alien (1).png')
+enemy2=pygame.image.load('A GAME(update)\\alien.png')
+enemy3=pygame.image.load('A GAME(update)\\space-ship.png')
 enemyx=random.randint(64,936)
 enemyy=64
 ey=0.4
 
-bulletp=pygame.image.load('bullet (1).png')
-bullete=pygame.image.load('bullet (3).png')
+bulletp=pygame.image.load('A GAME(update)\\bullet (1).png')
+bullete=pygame.image.load('A GAME(update)\\bullet (3).png')
 bulletx=0
 bullety=690
 bullx=0
@@ -40,7 +40,7 @@ bully=1.6
 bulletstate="ready"
 
 
-bulletpp=pygame.image.load('bullet (2).png')
+bulletpp=pygame.image.load('A GAME(update)\\bullet (2).png')
 bulletppx=0
 bulletppy=690
 bullppx=0
@@ -140,7 +140,7 @@ while run:
 
             if event.key==pygame.K_SPACE:
                 if bulletstate=="ready":
-                    bulletsound= mixer.Sound('blaster-2-81267.mp3')
+                    bulletsound= mixer.Sound('A GAME(update)\\blaster-2-81267.mp3')
                     bulletsound.play()
                     bulletx=playerx
                     bullety=playery
@@ -148,7 +148,7 @@ while run:
             
             if event.key==pygame.K_RCTRL:
                 if bulletbigstate=="r":
-                    bulletsound1= mixer.Sound('laser-gun-81720.mp3')
+                    bulletsound1= mixer.Sound('A GAME(update)\laser-gun-81720.mp3')
                    
                     bulletsound1.play()
                     bulletppx=playerx
@@ -191,7 +191,7 @@ while run:
 
         coll=collision(enemyx,enemyy,bulletx,bullety)
         if coll:
-            explodesound= mixer.Sound('explosion-6055.mp3')
+            explodesound= mixer.Sound('A GAME(update)\explosion-6055.mp3')
             explodesound.play()
             bullety=playery
             bulletstate="ready"
@@ -203,7 +203,7 @@ while run:
 
         collo=collision(enemyx,enemyy,bulletppx,bulletppy)
         if collo:
-            explodesound= mixer.Sound('explosion-6055.mp3')
+            explodesound= mixer.Sound('A GAME(update)\explosion-6055.mp3')
             explodesound.play()
             bulletppy=playery
             bulletbigstate="r"
