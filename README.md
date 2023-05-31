@@ -7,4 +7,6 @@ The controls of this game are :-
 2) Shoot -> space or right ctrl
 
 
+# If you want to run the game then download the folder files ... please
+
 THANK YOU😉
