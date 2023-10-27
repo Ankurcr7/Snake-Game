@@ -1,10 +1,6 @@
-# A-Game
+# Snake Game
 The controls of this game are :-
-
-
-1) Move -> all four arrow buttons
-
-2) Shoot -> space or right ctrl
+Move -> all four arrow buttons
 
 
 # If you want to run the game then download the folder files ... please
